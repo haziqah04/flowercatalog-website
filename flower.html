@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Catalog - Hazu Petals</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 100px;
+            background-color: #333;
+            color: #fff;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        .header img {
+            max-height: 50px;
+            margin-right: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .nav-menu {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-menu a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .nav-menu a:hover {
+            text-decoration: underline;
+        }
+        .nav-menu a.active {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .flower-row {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .flower-column {
+            flex-basis: 50%;
+        }
+        .flower {
+            border: 1px solid #ccc;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+        .flower img {
+            width: 100%;
+            height: 300px; /* Adjust the height as needed */
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .flower-details {
+            width: 50%;
+            padding-left: 20px;
+        }
+        .flower-details h3,
+        .flower-details p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <img src="hazulogo.jpg" alt="Hazu Petals Logo">
+            <h1>Hazu Petals</h1>
+        </div>
+        <div class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="flower.html" class="active">Flower</a>
+            <a href="package.html">Package</a>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Choose Your Flower</h2>
+        <div class="flower-row">
+            <div class="flower-column">
+                <div class="flower">
+                    <img src="rose.jpg" alt="Rose">
+                    <div class="flower-details">
+                        <h3>Rose</h3>
+                        <p>Description of Rose.</p>
+                        <p>Price: $10</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-column">
+                <div class="flower">
+                    <img src="tulip.jpg" alt="Tulip">
+                    <div class="flower-details">
+                        <h3>Tulip</h3>
+                        <p>Description of Tulip.</p>
+                        <p>Price: $12</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flower-row">
+            <div class="flower-column">
+                <div class="flower">
+                    <img src="daisy.jpg" alt="Daisy">
+                    <div class="flower-details">
+                        <h3>Daisy</h3>
+                        <p>Description of Daisy.</p>
+                        <p>Price: $8</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-column">
+                <div class="flower">
+                    <img src="sunflower.jpg" alt="Sunflower">
+                    <div class="flower-details">
+                        <h3>Sunflower</h3>
+                        <p>Description of Sunflower.</p>
+                        <p>Price: $15</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flower-row">
+            <div class="flower-column">
+                <div class="flower">
+                    <img src="lavender.jpg" alt="Daisy">
+                    <div class="flower-details">
+                        <h3>Lavender</h3>
+                        <p>Description of Daisy.</p>
+                        <p>Price: $8</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-column">
+                <div class="flower">
+                    <img src="sunflower.jpg" alt="Sunflower">
+                    <div class="flower-details">
+                        <h3>Sunflower</h3>
+                        <p>Description of Sunflower.</p>
+                        <p>Price: $15</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flower-row">
+            <div class="flower-column">
+                <div class="flower">
+                    <img src="daisy.jpg" alt="Daisy">
+                    <div class="flower-details">
+                        <h3>Daisy</h3>
+                        <p>Description of Daisy.</p>
+                        <p>Price: $8</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-column">
+                <div class="flower">
+                    <img src="sunflower.jpg" alt="Sunflower">
+                    <div class="flower-details">
+                        <h3>Sunflower</h3>
+                        <p>Description of Sunflower.</p>
+                        <p>Price: $15</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
