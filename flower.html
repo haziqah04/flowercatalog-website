@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Package - Hazu Petals</title>
+    <title>Flower Catalog - Hazu Petals</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -54,30 +54,44 @@
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .package {
+        .flower-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .flower-column {
+            flex-basis: calc(50% - 10px);
+        }
+        .flower {
             border: 1px solid #ccc;
-            padding: 20px;
             background-color: #fff;
             border-radius: 5px;
-            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
         }
-        .package h2 {
-            margin-top: 0;
-        }
-        .package p {
-            margin-bottom: 10px;
-        }
-        .package img {
-            width: 100%;
-            height: auto;
+        .flower img {
+            width: 300px;
+            height: 400px;
             object-fit: cover;
-            border-radius: 5px;
-            margin-bottom: 10px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        .flower-details {
+            padding: 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .flower-details h3,
+        .flower-details p {
+            margin: 0;
         }
 
-        @media screen and (min-width: 768px) {
-            .header {
-                padding: 20px 100px;
+        @media screen and (max-width: 768px) {
+            .flower-column {
+                flex-basis: 100%;
             }
         }
     </style>
@@ -90,33 +104,100 @@
         </div>
         <div class="nav-menu">
             <a href="index.html">Home</a>
-            <a href="flower.html">Flower</a>
-            <a href="package.html" class="active">Package</a>
+            <a href="flower.html" class="active">Flower</a>
+            <a href="package.html">Package</a>
         </div>
     </div>
-
     <div class="container">
-        <h2>Packages</h2>
-        <div class="package">
-            <img src="mothersday.jpeg" alt="Wedding Package">
-            <h2>Mother's Day Package</h2>
-            <p>Make your special day even more beautiful with our Wedding Package. Includes a variety of stunning flowers for your ceremony and reception.</p>
-            <p>Price: RM50</p>
+        <h2>Choose Your Flower</h2>
+        <div class="flower-row">
+            <div class="flower-column">
+                <div class="flower">
+                    <img src="rose.jpg" alt="Rose">
+                    <div class="flower-details">
+                        <h3>Rose</h3>
+                        <p>Description of Rose.</p>
+                        <p>Price: $10</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-column">
+                <div class="flower">
+                    <img src="tulip.jpg" alt="Tulip">
+                    <div class="flower-details">
+                        <h3>Tulip</h3>
+                        <p>Description of Tulip.</p>
+                        <p>Price: $12</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="package">
-            <img src="fathersday.jpg" alt="Wedding Package">
-            <h2>Father's Day Package</h2>
-            <p>Make your special day even more beautiful with our Wedding Package. Includes a variety of stunning flowers for your ceremony and reception.</p>
-            <p>Price: RM50</p>
+        <div class="flower-row">
+            <div class="flower-column">
+                <div class="flower">
+                    <img src="daisy.jpg" alt="Daisy">
+                    <div class="flower-details">
+                        <h3>Daisy</h3>
+                        <p>Description of Daisy.</p>
+                        <p>Price: $8</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-column">
+                <div class="flower">
+                    <img src="sunflower.jpg" alt="Sunflower">
+                    <div class="flower-details">
+                        <h3>Sunflower</h3>
+                        <p>Description of Sunflower.</p>
+                        <p>Price: $15</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="package">
-            <img src="birthday.jpg" alt="Birthday Bundle">
-            <h2>Happy Birthday Package</h2>
-            <p>Celebrate another year with our Birthday Bundle. A colorful assortment of blooms to brighten up the occasion.</p>
-            <p>Price: RM50</p>
+        <div class="flower-row">
+            <div class="flower-column">
+                <div class="flower">
+                    <img src="lavender.jpg" alt="Daisy">
+                    <div class="flower-details">
+                        <h3>Lavender</h3>
+                        <p>Description of Daisy.</p>
+                        <p>Price: $8</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-column">
+                <div class="flower">
+                    <img src="sunflower.jpg" alt="Sunflower">
+                    <div class="flower-details">
+                        <h3>Sunflower</h3>
+                        <p>Description of Sunflower.</p>
+                        <p>Price: $15</p>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <!-- Add more packages as needed -->
+        <div class="flower-row">
+            <div class="flower-column">
+                <div class="flower">
+                    <img src="daisy.jpg" alt="Daisy">
+                    <div class="flower-details">
+                        <h3>Daisy</h3>
+                        <p>Description of Daisy.</p>
+                        <p>Price: $8</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flower-column">
+                <div class="flower">
+                    <img src="sunflower.jpg" alt="Sunflower">
+                    <div class="flower-details">
+                        <h3>Sunflower</h3>
+                        <p>Description of Sunflower.</p>
+                        <p>Price: $15</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 </body>
