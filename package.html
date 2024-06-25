@@ -15,7 +15,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 20px 100px;
+            padding: 20px;
             background-color: #333;
             color: #fff;
         }
@@ -24,12 +24,12 @@
             align-items: center;
         }
         .header img {
-            max-height: 50px;
-            margin-right: 20px;
+            max-height: 40px;
+            margin-right: 10px;
         }
         .header h1 {
             margin: 0;
-            font-size: 24px;
+            font-size: 20px;
         }
         .nav-menu {
             display: flex;
@@ -38,7 +38,7 @@
         .nav-menu a {
             color: #fff;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 16px;
         }
         .nav-menu a:hover {
             text-decoration: underline;
@@ -68,11 +68,17 @@
             margin-bottom: 10px;
         }
         .package img {
-            width: 200 px;
-            height: 300px; /* Adjust the height as needed */
+            width: 200px;
+            height: 300px;
             object-fit: cover;
             border-radius: 5px;
             margin-bottom: 10px;
+        }
+
+        @media screen and (min-width: 768px) {
+            .header {
+                padding: 20px 100px;
+            }
         }
     </style>
 </head>
