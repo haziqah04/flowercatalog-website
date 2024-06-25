@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flower Catalog - Hazu Petals</title>
+    <title>Package - Hazu Petals</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,7 +11,6 @@
             padding: 0;
             background-color: #f8f8f8;
         }
-
         .header {
             display: flex;
             align-items: center;
@@ -20,80 +19,66 @@
             background-color: #333;
             color: #fff;
         }
-
         .logo-container {
             display: flex;
             align-items: center;
         }
-
         .header img {
             max-height: 40px;
             margin-right: 10px;
         }
-
         .header h1 {
             margin: 0;
             font-size: 20px;
         }
-
         .nav-menu {
             display: flex;
             gap: 20px;
         }
-
         .nav-menu a {
             color: #fff;
             text-decoration: none;
             font-size: 16px;
         }
-
         .nav-menu a:hover {
             text-decoration: underline;
         }
-
         .nav-menu a.active {
             font-weight: bold;
             text-decoration: underline;
         }
-
         .container {
-            max-width: 100%;
+            max-width: 1200px;
+            margin: 20px auto;
             padding: 20px;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
-        .item {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            padding: 20px;
+        .package {
             border: 1px solid #ccc;
-            border-radius: 5px;
+            padding: 20px;
             background-color: #fff;
-        }
-
-        .item img {
-            width: 100%;
-            max-width: 300px;
-            height: auto;
             border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .package h2 {
+            margin-top: 0;
+        }
+        .package p {
+            margin-bottom: 10px;
+        }
+        .package img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 10px;
         }
 
-        .item-details {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .item h2 {
-            margin: 0;
-            font-size: 18px;
-        }
-
-        .item p {
-            margin: 0;
-            font-size: 14px;
+        @media screen and (min-width: 768px) {
+            .header {
+                padding: 20px 100px;
+            }
         }
     </style>
 </head>
@@ -105,29 +90,34 @@
         </div>
         <div class="nav-menu">
             <a href="index.html">Home</a>
-            <a href="flower.html" class="active">Flower</a>
-            <a href="package.html">Package</a>
+            <a href="flower.html">Flower</a>
+            <a href="package.html" class="active">Package</a>
         </div>
     </div>
+
     <div class="container">
-        <h1>Flower Catalog</h1>
-        <div class="item">
-            <img src="singleblossom.jpg" alt="Flower 1">
-            <div class="item-details">
-                <h2>Solo Blossom</h2>
-                <p>Description of Flower 1.</p>
-                <p>Price: RM12</p>
-            </div>
+        <h2>Packages</h2>
+        <div class="package">
+            <img src="mothersday.jpeg" alt="Wedding Package">
+            <h2>Mother's Day Package</h2>
+            <p>Make your special day even more beautiful with our Wedding Package. Includes a variety of stunning flowers for your ceremony and reception.</p>
+            <p>Price: RM50</p>
         </div>
-        <div class="item">
-            <img src="trioofbloom.jpg" alt="Flower 2">
-            <div class="item-details">
-                <h2>Trio of Bloom</h2>
-                <p>Description of Flower 2.</p>
-                <p>Price: RM45</p>
-            </div>
+        <div class="package">
+            <img src="fathersday.jpg" alt="Wedding Package">
+            <h2>Father's Day Package</h2>
+            <p>Make your special day even more beautiful with our Wedding Package. Includes a variety of stunning flowers for your ceremony and reception.</p>
+            <p>Price: RM50</p>
         </div>
-        <!-- Add more items here -->
+        <div class="package">
+            <img src="birthday.jpg" alt="Birthday Bundle">
+            <h2>Happy Birthday Package</h2>
+            <p>Celebrate another year with our Birthday Bundle. A colorful assortment of blooms to brighten up the occasion.</p>
+            <p>Price: RM50</p>
+        </div>
+
+        <!-- Add more packages as needed -->
+
     </div>
 </body>
 </html>
